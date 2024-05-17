@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOFTLOGIC CATEGORY</title>
+    <script>
+        function addNumbers() {
+            var num1 = parseFloat(document.getElementById("num1").value);
+            var num2 = parseFloat(document.getElementById("num2").value);
+            var result = num1;
+            var okkoma = num2 * 300000;
+            var fullc = num2 * 300000 - num1;
+            var cata = num1 / num2;
+            var salary = num1 / 12
+
+            document.getElementById("result").innerText ="ANBP :" + result;
+            document.getElementById("okkoma").innerText ="ALL ANBP :" + okkoma;
+            document.getElementById("fullc").innerText ="INTRODUCE :" + fullc;
+            //document.getElementById("cata").innerText ="C ANBP :" + cata;
+           // document.getElementById("category").innerText = "2A";
+
+           if(cata >= 300000){
+            document.getElementById("category").innerText = "6A";
+           }else if(cata >=250000){
+            document.getElementById("category").innerText = "5A";
+           }else if(cata >=200000){
+            document.getElementById("category").innerText = "4A";
+           }else if(cata >= 150000){
+            document.getElementById("category").innerText = "3A";
+           }else if(cata >= 100000){
+            document.getElementById("category").innerText = "2A";
+           }else if(cata >= 50000){
+            document.getElementById("category").innerText = "A";
+           }else if(cata >= 25000){
+            document.getElementById("category").innerText = "-A";
+           }
+
+           if(cata >= 300000){
+            document.getElementById("salary").innerText = "Rs: " + (salary * 55 / 100);
+        }else if(cata >=250000){
+            document.getElementById("salary").innerText = "Rs: " + (salary * 52 / 100);
+        }else if(cata >=200000){
+            document.getElementById("salary").innerText = "Rs: " + (salary * 48 / 100);
+        }else if(cata >=150000){
+            document.getElementById("salary").innerText = "Rs: " + (salary * 45 / 100);
+        }else if(cata >=50000){
+            document.getElementById("salary").innerText = "Rs: " + (salary * 45 / 100);
+        }else if(cata >=25000){
+            document.getElementById("salary").innerText = "Rs: " + (salary * 35 / 100);
+        }
+
+
+
+        }
+    </script>
+
+<style>
+
+body{
+    background-image: url(pic.png);
+}
+
+h1{
+    font-family: arial;
+    background-color: #c61aff;
+    color: #ffffff;
+}
+
+#num1{position: relative;
+    width: 250px;
+    height: 20px;
+    top: 15px;
+    
+    
+
+}
+
+#num2{position: relative;
+    width: 250px;
+    height: 20px;
+    top: 20px;
+
+}
+
+button{position: relative;
+    top: 25px;
+    left: 190px;
+    width: 100px;
+    background-color: #8000ff;
+    font-family: Arial;
+    color: #ffffff;
+    border-color: #8000ff;
+
+}
+
+#Developer{position: absolute;
+    top: 95px;
+    left: 50px;
+    font-family: arial;
+
+  
+
+
+}
+
+.data{position: relative;
+    font-family: arial;
+    top: 20px;
+    left: 47px;
+    color: #ffffff;
+
+}
+
+.back{position: relative;
+    background-color: #c61aff;
+    width: 345px;
+    height: 150px;
+
+}
+</style>
+
+
+
+
+</head>
+<body>
+   <center> <h1>sCATEGORY</h1></center>
+   <div class="back">
+    <p>
+        <label for="num1"></label>
+       <center> <input type="number" id="num1" value=""placeholder="ANBP"></center>
+    </p>
+    <p>
+        <label for="num2"></label>
+        <center><input type="number" id="num2" value=""placeholder="MONTH"></center>
+    </p>
+    <button onclick="addNumbers()">ADD</button>
+    <center> <P id="Developer">Developer by:G.B</P></center>
+</div>
+    <div class="data">
+    <p id="result"></p>
+    <P id="okkoma"></P>
+    <p id="fullc"></p>
+    <p id="cata"></p>
+    <P id="category"></P>
+    <p id="salary"></p>
+    </div>
+   
+</body>
+</html>
