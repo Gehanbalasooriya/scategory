@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hAdvisor Login</title>
+    <!-- Font Awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            background-image: url('pic.png');
+          
+        }
+
+        /* Navigation bar */
+        .nav-bar {
+            position: absolute;
+            top: 10px;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 180px;
+            z-index: 1000; /* Ensure the navbar is on top */
+        }
+
+        .nav-bar .nav-btn {
+            color: #000000;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 30px; /* Increase button text size */
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            transition: background-color 0.3s; /* Smooth hover effect */
+        }
+
+        .nav-bar .nav-btn i {
+            margin-right: 8px; /* Icon and text spacing */
+            font-size: 30px; /* Adjust icon size */
+        }
+
+        .nav-bar .nav-btn:hover {
+            background-color: rgba(74, 35, 113, 0.7); /* Change background color on hover */
+        }
+
+      
+       
+       
+
+       
+        
+
+        .btn {
+            background-color: #5c2d91;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .btn:hover {
+            background-color: #4a2371;
+        }
+
+        h2{position: relative;
+            top: 50px;
+            left: 50px;
+
+        }
+
+
+        table {position: relative;
+            top: 40px;
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation bar with icons -->
+    <div class="nav-bar">
+        <a href="index.html" class="nav-btn"><i class="fas fa-home"></i> </a> <!-- Home button -->
+        <a href="more.html" class="nav-btn"><i class="fas fa-ellipsis-h"></i> </a> <!-- More button -->
+    </div>
+
+   
+   <center>
+    <h2>වැඩිහිටි ගැහැණු අයෙකුගේ සාමාන්ය බර</h2>
+   </center>
+    <table>
+        <thead>
+            <tr>
+                <th>අඩි</th>
+                <th>අඟල්</th>
+                <th>සෙ.මි</th>
+                <th>වයස 17-19 (Kg)</th>
+                <th>වයස 20-24 (Kg)</th>
+                <th>වයස 25-29 (Kg)</th>
+                <th>වයස 30-39 (Kg)</th>
+                <th>වයස 40-49 (Kg)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>4</td><td>10</td><td>147.3</td><td>44.9</td><td>46.3</td><td>48.5</td><td>52.7</td><td>55.7</td></tr>
+            <tr><td>4</td><td>11</td><td>149.9</td><td>46.6</td><td>47.6</td><td>49.9</td><td>53.1</td><td>56.2</td></tr>
+            <tr><td>5</td><td>0</td><td>152.2</td><td>47.6</td><td>49.0</td><td>51.3</td><td>54.4</td><td>57.6</td></tr>
+            <tr><td>5</td><td>1</td><td>154.9</td><td>49.4</td><td>50.8</td><td>52.6</td><td>55.8</td><td>60.0</td></tr>
+            <tr><td>5</td><td>2</td><td>157.5</td><td>51.3</td><td>52.2</td><td>54.0</td><td>57.2</td><td>60.3</td></tr>
+            <tr><td>5</td><td>3</td><td>160.0</td><td>52.6</td><td>53.5</td><td>55.3</td><td>58.5</td><td>61.7</td></tr>
+            <tr><td>5</td><td>4</td><td>162.6</td><td>54.4</td><td>54.9</td><td>56.7</td><td>59.9</td><td>63.5</td></tr>
+            <tr><td>5</td><td>5</td><td>165.1</td><td>56.2</td><td>58.7</td><td>58.5</td><td>61.2</td><td>64.9</td></tr>
+            <tr><td>5</td><td>6</td><td>167.6</td><td>57.6</td><td>58.8</td><td>60.3</td><td>63.0</td><td>66.7</td></tr>
+            <tr><td>5</td><td>7</td><td>170.2</td><td>59.0</td><td>59.9</td><td>61.7</td><td>64.4</td><td>68.5</td></tr>
+            <tr><td>5</td><td>8</td><td>172.7</td><td>60.8</td><td>61.7</td><td>63.5</td><td>66.2</td><td>70.3</td></tr>
+            <tr><td>5</td><td>9</td><td>175.3</td><td>62.6</td><td>63.5</td><td>65.3</td><td>68.0</td><td>72.1</td></tr>
+            <tr><td>5</td><td>10</td><td>177.8</td><td>64.4</td><td>65.3</td><td>67.1</td><td>69.9</td><td>74.4</td></tr>
+            <tr><td>5</td><td>11</td><td>180.3</td><td>66.7</td><td>67.6</td><td>69.4</td><td>72.5</td><td>76.7</td></tr>
+            <tr><td>6</td><td>0</td><td>182.0</td><td>68.8</td><td>69.9</td><td>71.7</td><td>74.4</td><td>78.9</td></tr>
+        </tbody>
+    </table>
+
+    <center>
+        <h2>වැඩිහිටි පිරිමි අයෙකුගේ සාමාන්ය බර</h2>
+       </center>
+        <table>
+            <thead>
+                <tr>
+                    <th>අඩි</th>
+                    <th>අඟල්</th>
+                    <th>සෙ.මි</th>
+                    <th>වයස 17-19 (Kg)</th>
+                    <th>වයස 20-24 (Kg)</th>
+                    <th>වයස 25-29 (Kg)</th>
+                    <th>වයස 30-39 (Kg)</th>
+                    <th>වයස 40-49 (Kg)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>5</td><td>2</td><td>157.5</td><td>54.0</td><td>58.1</td><td>60.8</td><td>62.1</td><td>63.5</td></tr>
+                <tr><td>5</td><td>3</td><td>160.0</td><td>55.8</td><td>59.9</td><td>62.6</td><td>64.0</td><td>65.3</td></tr>
+                <tr><td>5</td><td>4</td><td>162.6</td><td>57.6</td><td>61.7</td><td>64.0</td><td>65.8</td><td>67.1</td></tr>
+                <tr><td>5</td><td>5</td><td>165.1</td><td>59.4</td><td>63.0</td><td>65.3</td><td>67.5</td><td>68.9</td></tr>
+                <tr><td>5</td><td>6</td><td>167.6</td><td>61.2</td><td>64.4</td><td>67.1</td><td>69.4</td><td>70.3</td></tr>
+                <tr><td>5</td><td>7</td><td>170.2</td><td>63.0</td><td>65.8</td><td>68.5</td><td>71.2</td><td>73.0</td></tr>
+                <tr><td>5</td><td>8</td><td>172.7</td><td>64.9</td><td>67.6</td><td>70.3</td><td>73.0</td><td>74.8</td></tr>
+                <tr><td>5</td><td>9</td><td>175.3</td><td>66.7</td><td>69.4</td><td>72.1</td><td>74.8</td><td>76.7</td></tr>
+                <tr><td>5</td><td>10</td><td>177.8</td><td>68.5</td><td>71.2</td><td>73.9</td><td>77.1</td><td>78.9</td></tr>
+                <tr><td>5</td><td>11</td><td>180.3</td><td>70.3</td><td>73.0</td><td>75.8</td><td>78.9</td><td>80.0</td></tr>
+                <tr><td>6</td><td>0</td><td>182.9</td><td>72.6</td><td>75.3</td><td>78.0</td><td>81.2</td><td>83.0</td></tr>
+                <tr><td>6</td><td>1</td><td>185.4</td><td>74.2</td><td>77.1</td><td>80.3</td><td>83.0</td><td>84.8</td></tr>
+                <tr><td>6</td><td>2</td><td>188.0</td><td>76.2</td><td>78.9</td><td>82.6</td><td>85.3</td><td>87.1</td></tr>
+                <tr><td>6</td><td>3</td><td>190.5</td><td>78.0</td><td>80.8</td><td>84.4</td><td>87.5</td><td>88.4</td></tr>
+                
+            </tbody>
+        </table>
+    
+    
+   
+</body>
+</html>
